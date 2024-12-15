@@ -19,8 +19,10 @@ interface MahasiswaDao {
 
     @Delete
     suspend fun deleteMahasiswwa(mahasiswa: Mahasiswa)
+
     @Update
     suspend fun updateMahasiswa(mahasiswa: Mahasiswa)
+
     @Insert
     suspend fun insertMahasiswa(
         mahasiswa: Mahasiswa
