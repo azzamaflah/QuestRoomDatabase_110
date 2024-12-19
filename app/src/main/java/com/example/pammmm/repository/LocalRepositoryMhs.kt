@@ -12,14 +12,10 @@ class LocalRepositoryMhs (
 
     override suspend fun insertMhs(mahasiswa: Mahasiswa) {
         mahasiswaDao.insertMahasiswa(mahasiswa)
-
     }
-
     override fun getAllMahasiswa(): Flow<List<Mahasiswa>> {
         return mahasiswaDao.getAllMahasiswa()
-
     }
-
     override fun getMhs(nim: String): Flow<Mahasiswa>{
         return mahasiswaDao.getMahasiswa(nim)
     }
